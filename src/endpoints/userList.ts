@@ -36,7 +36,7 @@ export class UserList extends OpenAPIRoute {
 
     const response = await fetch("http://[2400:2410:38e1:2a00:7807:ff09:898f:9838]/user.json", {
       method: "get",
-      headers: { "Header": "http://[2400:2410:38e1:2a00:7807:ff09:898f:9838]" },
+      headers: { "Header": "https://my-first-worker.aiden-jr-smith.workers.dev" },
     });
 
     if (!response.ok) {
