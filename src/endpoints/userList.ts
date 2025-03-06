@@ -39,7 +39,7 @@ export class UserList extends OpenAPIRoute {
       headers: { "Header": "https://my-first-worker.aiden-jr-smith.workers.dev" },
     });
 
-    console.log(response);
+    console.log(JSON.stringify(response));
 
     if (!response.ok) {
       throw new Error('网络响应不是 OK');
